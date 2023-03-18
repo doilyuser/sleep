@@ -1,9 +1,18 @@
+import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
+import Clock from './Clock'
+import Nav from './Nav'
+import NowCalc from './NowCalc'
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
-    </div>
+    <main>
+      <Nav />
+      <Routes>
+        <Route path="/now" element={<NowCalc />}></Route>
+        <Route path="/" element={<Clock />}></Route>
+      </Routes>
+    </main>
   )
 }
 
