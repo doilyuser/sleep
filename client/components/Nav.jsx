@@ -1,3 +1,5 @@
+import Clock from './Clock'
+
 function Nav() {
   return (
     <header>

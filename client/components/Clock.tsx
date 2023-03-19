@@ -14,7 +14,7 @@ function Clock() {
     }
   }, [])
 
-  return <>{date.toLocaleTimeString()}</>
+  return <h1>{date.toLocaleTimeString()}</h1>
 }
 
 export default Clock

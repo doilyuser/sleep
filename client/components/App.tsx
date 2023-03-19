@@ -1,16 +1,22 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import { useState } from 'react'
-import Clock from './Clock'
 import Nav from './Nav'
-import NowCalc from './NowCalc'
+import Splash from './Splash'
+import Clock from './Clock'
+import Now from './Now'
+import Wake from './Wake'
+import Sleep from './Sleep'
 
 function App() {
   return (
     <main>
       <Nav />
       <Routes>
-        <Route path="/now" element={<NowCalc />}></Route>
-        <Route path="/" element={<Clock />}></Route>
+        <Route path="/" element={<Splash />}></Route>
+        <Route path="/clock" element={<Clock />}></Route>
+        <Route path="/now" element={<Now />}></Route>
+        <Route path="/wake" element={<Wake />}></Route>
+        <Route path="/sleep" element={<Sleep />}></Route>
       </Routes>
     </main>
   )
